@@ -35,13 +35,8 @@ const SearchComponent = ( { getTextbookSearchResults } ) => {
 
 const TextbookBuddy = ( { props, getTextbookSearchResults } ) => {
     return (
-<<<<<<< HEAD
         <div className="section">
             <div className="title"> BOOKS </div>
-=======
-        <div class="section">
-            <div class="title"> <b>BOOKS</b> </div>
->>>>>>> homepage
 
             <SearchComponent getTextbookSearchResults={ getTextbookSearchResults } />
 
