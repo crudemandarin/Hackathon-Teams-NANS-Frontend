@@ -25,7 +25,7 @@ const SearchComponent = () => {
 const TextbookBuddy = () => {
     return (
         <div class="section">
-            <div class="title"> BOOKS </div>
+            <div class="title"> <b>BOOKS</b> </div>
 
             <SearchComponent />
 
