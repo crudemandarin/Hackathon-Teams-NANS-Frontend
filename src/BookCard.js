@@ -15,7 +15,6 @@ export default function BookCard ({image, title, author, confidence, pages, publ
     };
 
     return (
-
         <>
             <Grid item xl={3} lg={3} sm={3} xs={6}>
                 <div className="card-wrapper">
