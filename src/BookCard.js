@@ -2,6 +2,7 @@ import {Dialog, Grid }from "@material-ui/core";
 import Typography from '@material-ui/core/Typography';
 import Container from "@material-ui/core/Container";
 import {useState} from 'react';
+import './BookCardStyles.css';
 
 export default function BookCard ({image, title, author, confidence, pages, publisher, language, year, size}) {
     const [open, setOpen] = useState(false);
@@ -26,7 +27,7 @@ export default function BookCard ({image, title, author, confidence, pages, publ
                             <Typography component="h6" variant="h6" color="primary" className="header">
                                 {title}
                             </Typography>
-                            <Typography component="p" variant="body1" className="body-text">
+                            <Typography component="p" variant="body1" className="header">
                                 {author}
                             </Typography>
                         </div>

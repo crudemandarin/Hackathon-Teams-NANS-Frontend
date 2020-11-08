@@ -1,0 +1,24 @@
+.card-wrapper {
+    width: 400px;
+    height: 400px;
+}
+.card {
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #09A9C2;
+    border-radius: 40px;
+}
+
+.card img {
+    height: 100%;
+}
+
+.card-container{
+    padding-top: 30px;
+}
+
+.card-container p {
+    font-size: 20px;
+}

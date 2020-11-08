@@ -71,6 +71,22 @@ function App() {
                             Language={"English"}
                             Year={"2010"}
                             Size={"256Mb"}/>
+                  <BookCard image={book_icon}
+                            title={"Biology"}
+                            author={"Nykolas"}
+                            pages={"556"}
+                            publisher={"Penguin Random House"}
+                            Language={"English"}
+                            Year={"2010"}
+                            Size={"256Mb"}/>
+                  <BookCard image={book_icon}
+                            title={"Biology"}
+                            author={"Nykolas"}
+                            pages={"556"}
+                            publisher={"Penguin Random House"}
+                            Language={"English"}
+                            Year={"2010"}
+                            Size={"256Mb"}/>
               </Grid>
           </Container>
       </section>
