@@ -37,11 +37,11 @@ body {
 
 .hero {
   height: 350px;
+  padding: 0 30px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 
   font-size: 3rem;
 }
