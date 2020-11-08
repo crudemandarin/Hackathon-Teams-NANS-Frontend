@@ -11,23 +11,43 @@ import Container from "@material-ui/core/Container";
 import book_icon from "./open-book.svg";
 import BookCard from "./BookCard";
 
+const BookRow = ( { books } ) => {
+
+    return ( 
+        <Grid container direction="row" spacing={3} style={{marginBottom: "35px"}}
+                        justify="space-around">
+
+            { books.map( book => <BookCard  image={book_icon}
+                                    title={book.Title}
+                                    author={book.Author}
+                                    pages={book.Pages}
+                                    publisher={book.Publisher}
+                                    Language={book.Language}
+                                    Year={book.Year}
+                                    Size={book.Size} />  ) }
+
+        </Grid> )
+}
+
 /* Grid prints one book */
 const BookLedgerComponent = ( { props } ) => {
 
+    let books = props.books.splice( 0, 3 )
+
     return (
-        <section className="section cards" style={{paddingTop: '200px'}}>
+        <section className="section cards" style={{paddingTop: '100px'}}>
             <Container maxWidth={"lg"}>
                 <Grid container direction="row" spacing={3} style={{marginBottom: "35px"}}
                         justify="space-around">
 
-                    { props.books.map( book => <BookCard  image={book_icon}
-                                            title={book.Title}
-                                            author={book.Author}
-                                            pages={book.Pages}
-                                            publisher={book.Publisher}
-                                            Language={book.Language}
-                                            Year={book.Year}
-                                            Size={book.Size} />  ) }
+                    { books.map( book => <BookCard  image={book_icon}
+                                title={book.Title}
+                                author={book.Author}
+                                pages={book.Pages}
+                                publisher={book.Publisher}
+                                Language={book.Language}
+                                Year={book.Year}
+                                Size={book.Size} />  ) }
 
                 </Grid>
             </Container>
