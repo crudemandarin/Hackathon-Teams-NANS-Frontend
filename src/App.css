@@ -15,10 +15,11 @@ body {
 .codered-accent {
   color: RED;
   font-weight: 600;
+  padding: 0 155px;
 }
 
 .header {
-  padding: 0 30px;
+  padding: 0 170px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,4 +60,15 @@ body {
 
 .section .title {
   font-size: 2rem;
+}
+
+.title-text{
+  position: relative;
+  right: 150px;
+}
+
+.book-img {
+  width: 90%;
+  position: relative;
+  left: 170px;
 }
