@@ -14,3 +14,18 @@
     display: flex;
     justify-content: space-between;
 }
+
+.advance-search-modal {
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.advance-search-modal .title {
+    font-size: 2rem;
+    padding: 0 50px;
+}
+
+.advance-search-modal > div {
+    align-items: center;
+}
