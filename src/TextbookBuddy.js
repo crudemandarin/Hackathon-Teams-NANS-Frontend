@@ -5,11 +5,33 @@ import { useState } from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
+import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
+import book_icon from "./open-book.svg";
+import BookCard from "./BookCard";
 
 /* Grid prints one book */
 const BookLedgerComponent = ( { props } ) => {
+
     return (
-        <></>
+        <section className="section cards" style={{paddingTop: '200px'}}>
+            <Container maxWidth={"lg"}>
+                <Grid container direction="row" spacing={3} style={{marginBottom: "35px"}}
+                        justify="space-around">
+
+                    { props.books.map( book => <BookCard  image={book_icon}
+                                            title={book.Title}
+                                            author={book.Author}
+                                            pages={book.Pages}
+                                            publisher={book.Publisher}
+                                            Language={book.Language}
+                                            Year={book.Year}
+                                            Size={book.Size} />  ) }
+
+                </Grid>
+            </Container>
+        </section>
     );
 }
 

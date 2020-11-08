@@ -8,12 +8,11 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import book_icon from "./open-book.svg";
-import BookCard from "./BookCard";
 
 const apiservice = new ApiService();
 
 function App() {
-  const [ props, setProps ] = useState( { books: {}, discounts: {} } );
+  const [ props, setProps ] = useState( { books: [], discounts: {} } );
 
   const getTextbookSearchResults = query => {
     apiservice.getTextbookSearchResults( query ).then( response => response.json() ).then( value => {
@@ -58,38 +57,6 @@ function App() {
       </section>
 
       <TextbookBuddy props={ props } getTextbookSearchResults={ getTextbookSearchResults } />
-
-      <section className="section cards" style={{paddingTop: '200px'}}>
-          <Container maxWidth={"lg"}>
-              <Grid container direction="row" spacing={3} style={{marginBottom: "35px"}}
-                    justify="space-around">
-                  <BookCard image={book_icon}
-                            title={"Biology"}
-                            author={"Nykolas"}
-                            pages={"556"}
-                            publisher={"Penguin Random House"}
-                            Language={"English"}
-                            Year={"2010"}
-                            Size={"256Mb"}/>
-                  <BookCard image={book_icon}
-                            title={"Biology"}
-                            author={"Nykolas"}
-                            pages={"556"}
-                            publisher={"Penguin Random House"}
-                            Language={"English"}
-                            Year={"2010"}
-                            Size={"256Mb"}/>
-                  <BookCard image={book_icon}
-                            title={"Biology"}
-                            author={"Nykolas"}
-                            pages={"556"}
-                            publisher={"Penguin Random House"}
-                            Language={"English"}
-                            Year={"2010"}
-                            Size={"256Mb"}/>
-              </Grid>
-          </Container>
-      </section>
 
       <div id="discount-buddy" class="section">
         <div className="title"> <b>DISCOUNTS</b> </div>
