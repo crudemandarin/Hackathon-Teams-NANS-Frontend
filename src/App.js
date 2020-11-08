@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+
+import TextbookBuddy from './TextbookBuddy'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="banner"> <div class="codered-accent"> CODERED ] TEAM NANS </div> </div>
+      
+      <div className="header">
+        <div> COLLEGE BUDDY </div>
+        <div className="navigation">
+          <div> INFO </div>
+          <div> DISCOUNTS </div>
+          <div> HELP </div>
+          <div> FAQ </div>
+        </div>
+      </div>
+
+      <div className="hero">
+        <div> OBTAIN YOUR  DIGITAL TEXTBOOK AND START LEARNING </div>
+      </div>
+
+      <TextbookBuddy />
+
+      <div id="discount-buddy" class="section">
+        <div className="title"> DISCOUNTS </div>
+      </div>
+
+    </>
   );
 }
 

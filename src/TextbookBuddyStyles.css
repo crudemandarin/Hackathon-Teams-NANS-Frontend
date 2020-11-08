@@ -1,0 +1,14 @@
+.search-bar-wrapper {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar-button-wrapper {
+    width: 80%;
+    max-width: 300px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
